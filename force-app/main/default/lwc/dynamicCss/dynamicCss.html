@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Dynamic CSS" icon-name="custom:custom14">
+        <div class="slds-var-p-around_small">
+            <p class={pColor}>
+                Welcome To Manoj Salesforce Tutorial
+            </p>
+        </div>
+        <div class="slds-var-p-around_small">
+            <lightning-button 
+            label="Add CSS" 
+            variant="brand" 
+            onclick={addCSSHandler}
+            class="slds-var-p-around_small"
+            ></lightning-button>
+            <lightning-button 
+            label="Remove CSS" 
+            variant="brand" 
+            onclick={removeCSSHandler}
+            class="slds-var-p-around_small"
+            ></lightning-button>
+            <lightning-button 
+            label="Toggle CSS" 
+            variant="brand" 
+            onclick={toggleCSSHandler}
+            class="slds-var-p-around_small"
+            ></lightning-button>
+        </div>
+    </lightning-card>
+</template>
